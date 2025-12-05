@@ -47,17 +47,13 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
               const Icon = item.icon;
               const isActive = location === item.href;
               return (
-                <Link key={item.href} href={item.href}>
-                  <a
-                    className={`flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
-                      isActive
-                        ? "bg-primary/20 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)]"
-                        : "text-slate-400 hover:text-white hover:bg-white/5"
-                    }`}
-                  >
+                <Link key={item.href} href={item.href} className={`flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
+                  isActive
+                    ? "bg-primary/20 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)]"
+                    : "text-slate-400 hover:text-white hover:bg-white/5"
+                }`}>
                     <Icon className={`w-4 h-4 ${isActive ? "text-primary-foreground" : ""}`} />
                     {item.label}
-                  </a>
                 </Link>
               );
             })}
