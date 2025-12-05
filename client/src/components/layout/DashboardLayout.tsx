@@ -24,6 +24,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
     { href: "/", label: "Executive Summary", icon: LayoutDashboard },
     { href: "/influenced-hires", label: "Influenced Hires", icon: Users },
     { href: "/adoption-metrics", label: "Adoption Metrics", icon: BarChart3 },
+    { href: "/usage-details", label: "Usage Details", icon: LogOut },
   ];
 
   return (
