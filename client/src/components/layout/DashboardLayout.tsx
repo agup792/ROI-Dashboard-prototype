@@ -12,6 +12,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Calendar } from "lucide-react";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -85,6 +93,24 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                 placeholder="Search data..."
                 className="pl-9 bg-slate-50 border-slate-200 focus-visible:ring-primary/20"
               />
+            </div>
+
+            <div className="hidden md:flex items-center gap-2">
+              <Select defaultValue="last12">
+                <SelectTrigger className="w-[180px] bg-slate-50 border-slate-200 text-slate-600">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4 text-slate-400" />
+                    <SelectValue placeholder="Time Period" />
+                  </div>
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="last12">Last 12 Months</SelectItem>
+                  <SelectItem value="last6">Last 6 Months</SelectItem>
+                  <SelectItem value="ytd">Year to Date</SelectItem>
+                  <SelectItem value="q2">Q2 2024</SelectItem>
+                  <SelectItem value="q1">Q1 2024</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
           </div>
 

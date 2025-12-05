@@ -18,10 +18,6 @@ export default function ExecutiveSummary() {
             <p className="text-slate-500">ROI and impact analysis for Acme Corp</p>
           </div>
           <div className="flex items-center gap-3">
-            <Button variant="outline" className="gap-2 bg-white border-slate-200">
-              <Calendar className="w-4 h-4 text-slate-500" />
-              Last 12 Months
-            </Button>
             <Button className="gap-2 bg-primary hover:bg-primary/90 shadow-sm">
               <Download className="w-4 h-4" />
               Export Report
