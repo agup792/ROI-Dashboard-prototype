@@ -1,0 +1,95 @@
+Build an interactive ROI Reporting Dashboard for a B2B SaaS company (SeekOut) that helps Customer Success Managers demonstrate value to clients.
+
+## What to Build
+A responsive web dashboard with 3 views:
+1. Executive Summary (landing page)
+2. Influenced Hires Detail (data table)
+3. Adoption Metrics (charts)
+
+## Tech Stack
+- React + TypeScript
+- Tailwind CSS for styling
+- Recharts or Chart.js for visualizations
+- Use a modern, professional design (think Tableau/Looker aesthetic)
+
+## Sample Data
+Generate realistic mock data for a customer called "Acme Corp":
+- ARR: $150,000
+- Total Licenses: 25
+- Active Users: 22
+- 35 influenced hires over 12 months
+- Mix of levels: 8 Senior Leadership, 5 Managers, 12 Lead ICs, 10 ICs
+- Diversity: 40% Female, 8% African American, 12% Hispanic
+
+## Executive Summary View (Landing Page)
+Layout: 4 metric cards at top, 2 charts below, filters in sidebar
+
+### Metric Cards (top row)
+1. **Influenced Hires**: 35 (with sparkline trend)
+2. **Cost Per Hire**: $4,286 (ARR ÷ hires)
+3. **Agency Savings**: $2.1M (sum of salaries × 20%)
+4. **SeekOut Value Add**: 2.3% (influenced ÷ total hires)
+
+### Charts
+- **Left**: Horizontal bar chart - "Influenced Hires by Level" 
+- **Right**: Donut chart - "Diversity Breakdown"
+
+### Filters (sidebar or top)
+- Customer dropdown (default: Acme Corp)
+- Date range selector (Q1 2024, Q2 2024, etc.)
+- Export button (PDF, Excel icons)
+
+## Influenced Hires Detail View
+Sortable, filterable data table with columns:
+| Name | Title | Level | Location | Hire Date | SeekOut Actions | Diversity |
+
+- **SeekOut Actions**: Show as tags/badges (Exported, Contacted, Added to Project)
+- **Diversity**: Show gender/ethnicity badges where applicable
+- Include search bar and level filter dropdown
+- Pagination (10 per page)
+
+Generate 35 rows of realistic hire data:
+- Names like "Sarah Chen", "Michael Rodriguez", "Jennifer Thompson"
+- Titles like "Senior Software Engineer", "VP of Engineering", "Data Scientist"
+- Locations like "San Francisco, CA", "New York, NY", "Austin, TX"
+- Random mix of SeekOut actions per hire
+
+## Adoption Metrics View
+Two sections:
+
+### Usage Overview
+- Utilization gauge: 88% (22/25 licenses)
+- Login frequency: "4.2x per week" with benchmark comparison
+- Monthly Active Users line chart (last 6 months)
+
+### Feature Utilization
+- Bar chart showing % usage of features:
+  - Diversity Filters: 56%
+  - SeekOut Assist: 45%
+  - Workspaces: 32%
+  - Talent Rediscovery: 28%
+
+## Design Requirements
+- Color scheme: Professional purple (#6B46C1) as primary, with gray (#374151) and white
+- Clean, minimal design with good whitespace
+- Hover states on all interactive elements
+- Tooltips explaining metrics on hover (e.g., "Cost Per Hire = Annual contract value ÷ total influenced hires")
+- Dark header with logo placeholder and navigation tabs
+- Responsive (works on desktop and tablet)
+
+## Navigation
+Tab bar with 3 tabs:
+1. Summary (default)
+2. Influenced Hires
+3. Adoption
+
+## Interactions
+- Clicking a metric card could highlight related chart
+- Table rows are clickable (show detail modal or expand)
+- Charts have hover tooltips with exact values
+- Export buttons show loading state then success toast
+
+## Bonus (if time permits)
+- Add a "Compare Period" toggle to show QoQ change
+- Add skeleton loading states
+- Add a slide-out panel when clicking a hire name showing full profile
