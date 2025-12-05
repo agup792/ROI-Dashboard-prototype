@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, Link } from "wouter";
-import { LayoutDashboard, Users, BarChart3, Settings, LogOut, Search, Bell, ChevronDown } from "lucide-react";
+import { LayoutDashboard, Users, BarChart3, Settings, LogOut, Search, Bell, ChevronDown, Calculator } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -33,6 +33,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
     { href: "/influenced-hires", label: "Influenced Hires", icon: Users },
     { href: "/adoption-metrics", label: "Adoption Metrics", icon: BarChart3 },
     { href: "/usage-details", label: "Usage Details", icon: LogOut },
+    { href: "/roi-calculations", label: "ROI Methodology", icon: Calculator },
   ];
 
   return (

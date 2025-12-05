@@ -8,6 +8,7 @@ import ExecutiveSummary from "@/pages/ExecutiveSummary";
 import InfluencedHires from "@/pages/InfluencedHires";
 import AdoptionMetrics from "@/pages/AdoptionMetrics";
 import UsageDetail from "@/pages/UsageDetail";
+import ROICalculations from "@/pages/ROICalculations";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/influenced-hires" component={InfluencedHires} />
       <Route path="/adoption-metrics" component={AdoptionMetrics} />
       <Route path="/usage-details" component={UsageDetail} />
+      <Route path="/roi-calculations" component={ROICalculations} />
       <Route component={NotFound} />
     </Switch>
   );
