@@ -31,9 +31,9 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   const navItems = [
     { href: "/", label: "Executive Summary", icon: LayoutDashboard },
     { href: "/influenced-hires", label: "Influenced Hires", icon: Users },
+    { href: "/roi-calculations", label: "ROI Methodology", icon: Calculator },
     { href: "/adoption-metrics", label: "Adoption Metrics", icon: BarChart3 },
     { href: "/usage-details", label: "Usage Details", icon: LogOut },
-    { href: "/roi-calculations", label: "ROI Methodology", icon: Calculator },
   ];
 
   return (
