@@ -43,14 +43,14 @@ export default function ExecutiveSummary() {
           />
           <MetricCard
             title="Agency Savings"
-            value="$2.1M"
+            value="$1.2M"
             change={8}
             icon={<Briefcase className="h-4 w-4" />}
             tooltip="Estimated savings based on 20% agency fee avoidance"
           />
           <MetricCard
             title="SeekOut Value Add"
-            value="2.3%"
+            value="23.3%"
             change={0.5}
             icon={<TrendingUp className="h-4 w-4" />}
             tooltip="Percentage of total hires influenced by SeekOut"

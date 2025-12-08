@@ -14,9 +14,9 @@ export interface Hire {
 }
 
 export const MOCK_HIRES: Hire[] = [
-  { id: '1', name: "Sarah Chen", title: "VP of Engineering", level: "Senior Leadership", location: "San Francisco, CA", hireDate: "2024-01-15", actions: ["Exported", "Contacted"], diversity: { gender: "Female", ethnicity: "Asian" } },
+  { id: '1', name: "Sarah Chen", title: "VP of Engineering", level: "Senior Leadership", location: "San Francisco, CA", hireDate: "2024-01-15", actions: ["Exported", "Contacted", "Evaluated"], diversity: { gender: "Female", ethnicity: "Asian" } },
   { id: '2', name: "Michael Rodriguez", title: "Senior Product Manager", level: "Manager", location: "Austin, TX", hireDate: "2024-01-20", actions: ["Exported", "Added to Project"], diversity: { gender: "Male", ethnicity: "Hispanic" } },
-  { id: '3', name: "Jennifer Thompson", title: "Data Scientist", level: "IC", location: "New York, NY", hireDate: "2024-02-01", actions: ["Contacted"], diversity: { gender: "Female", ethnicity: "White" } },
+  { id: '3', name: "Jennifer Thompson", title: "Data Scientist", level: "IC", location: "New York, NY", hireDate: "2024-02-01", actions: ["Contacted", "Evaluated"], diversity: { gender: "Female", ethnicity: "White" } },
   { id: '4', name: "David Okonjo", title: "Lead Backend Engineer", level: "Lead IC", location: "Remote", hireDate: "2024-02-10", actions: ["Exported", "Contacted", "Added to Project"], diversity: { gender: "Male", ethnicity: "African American" } },
   { id: '5', name: "Emily Zhang", title: "Product Designer", level: "IC", location: "Seattle, WA", hireDate: "2024-02-15", actions: ["Exported"], diversity: { gender: "Female", ethnicity: "Asian" } },
   { id: '6', name: "James Wilson", title: "Director of Sales", level: "Senior Leadership", location: "Chicago, IL", hireDate: "2024-02-28", actions: ["Contacted", "Added to Project"], diversity: { gender: "Male", ethnicity: "White" } },

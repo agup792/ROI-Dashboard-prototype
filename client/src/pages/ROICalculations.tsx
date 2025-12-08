@@ -97,14 +97,29 @@ export default function ROICalculations() {
 
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="font-semibold text-slate-900 mb-2">Assumptions</h4>
-                  <ul className="list-disc list-inside text-sm text-slate-600 space-y-1">
-                    <li>Average Senior Leadership Salary: $250k</li>
-                    <li>Average Manager Salary: $180k</li>
-                    <li>Average Lead IC Salary: $160k</li>
-                    <li>Average IC Salary: $130k</li>
-                    <li>Standard Agency Placement Fee: 20%</li>
-                  </ul>
+                  <h4 className="font-semibold text-slate-900 mb-2">Example Calculation</h4>
+                  <div className="space-y-2 text-sm text-slate-600">
+                    <div className="flex justify-between py-1 border-b border-slate-100">
+                      <span>8 Senior Leadership × $250k × 20%</span>
+                      <span className="font-mono font-medium">$400,000</span>
+                    </div>
+                    <div className="flex justify-between py-1 border-b border-slate-100">
+                      <span>5 Managers × $180k × 20%</span>
+                      <span className="font-mono font-medium">$180,000</span>
+                    </div>
+                    <div className="flex justify-between py-1 border-b border-slate-100">
+                      <span>12 Lead ICs × $160k × 20%</span>
+                      <span className="font-mono font-medium">$384,000</span>
+                    </div>
+                    <div className="flex justify-between py-1 border-b border-slate-100">
+                      <span>10 ICs × $130k × 20%</span>
+                      <span className="font-mono font-medium">$260,000</span>
+                    </div>
+                    <div className="flex justify-between py-2 pt-3 text-slate-900 font-medium bg-slate-50 px-2 -mx-2 rounded">
+                      <span>Total Savings (35 hires)</span>
+                      <span className="font-mono text-emerald-600">$1,224,000</span>
+                    </div>
+                  </div>
                 </div>
                 <div className="text-sm text-slate-500 leading-relaxed">
                   <h4 className="font-semibold text-slate-900 mb-2">Why this matters</h4>
@@ -144,16 +159,35 @@ export default function ROICalculations() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-semibold text-slate-900 mb-2">Definition of "Influenced"</h4>
-                  <p className="text-sm text-slate-600 mb-4">
-                    A hire is considered "Influenced" if any of the following actions were taken in SeekOut prior to the offer date:
-                  </p>
-                  <div className="flex gap-2 flex-wrap">
-                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Profile Viewed</span>
-                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Added to Project</span>
-                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Exported</span>
-                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Contact Info Revealed</span>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-slate-900 mb-2">Example Calculation</h4>
+                    <div className="space-y-2 text-sm text-slate-600">
+                      <div className="flex justify-between py-1 border-b border-slate-100">
+                        <span>SeekOut Influenced Hires (L12M)</span>
+                        <span className="font-mono font-medium">35</span>
+                      </div>
+                      <div className="flex justify-between py-1 border-b border-slate-100">
+                        <span>Total Company Hires (L12M)</span>
+                        <span className="font-mono font-medium">150</span>
+                      </div>
+                      <div className="flex justify-between py-2 pt-3 text-slate-900 font-medium bg-slate-50 px-2 -mx-2 rounded">
+                        <span>Result</span>
+                        <span className="font-mono text-blue-600">23.3%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-900 mb-2">Definition of "Influenced"</h4>
+                    <p className="text-sm text-slate-600 mb-4">
+                      A hire is considered "Influenced" if any of the following actions were taken in SeekOut prior to the offer date:
+                    </p>
+                    <div className="flex gap-2 flex-wrap">
+                      <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Profile Viewed</span>
+                      <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Added to Project</span>
+                      <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Exported</span>
+                      <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Contact Info Revealed</span>
+                    </div>
                   </div>
                 </div>
                 <div className="text-sm text-slate-500 leading-relaxed">
