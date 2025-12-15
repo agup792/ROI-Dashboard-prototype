@@ -6,18 +6,18 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import ExecutiveSummary from "@/pages/ExecutiveSummary";
 import InfluencedHires from "@/pages/InfluencedHires";
-import AdoptionMetrics from "@/pages/AdoptionMetrics";
-import UsageDetail from "@/pages/UsageDetail";
+import UserAdoptionUsage from "@/pages/UserAdoptionUsage";
 import ROICalculations from "@/pages/ROICalculations";
+import ActivityReport from "@/pages/ActivityReport";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={ExecutiveSummary} />
       <Route path="/influenced-hires" component={InfluencedHires} />
-      <Route path="/adoption-metrics" component={AdoptionMetrics} />
-      <Route path="/usage-details" component={UsageDetail} />
+      <Route path="/user-adoption-usage" component={UserAdoptionUsage} />
       <Route path="/roi-calculations" component={ROICalculations} />
+      <Route path="/activity-report" component={ActivityReport} />
       <Route component={NotFound} />
     </Switch>
   );

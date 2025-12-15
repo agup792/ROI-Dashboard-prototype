@@ -177,16 +177,16 @@ export default function ROICalculations() {
                       </div>
                     </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-900 mb-2">Definition of "Influenced"</h4>
-                    <p className="text-sm text-slate-600 mb-4">
-                      A hire is considered "Influenced" if any of the following actions were taken in SeekOut prior to the offer date:
-                    </p>
-                    <div className="flex gap-2 flex-wrap">
-                      <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Profile Viewed</span>
-                      <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Added to Project</span>
-                      <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Exported</span>
-                      <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Contact Info Revealed</span>
+                <div>
+                  <h4 className="font-semibold text-slate-900 mb-2">Definition of "Influenced"</h4>
+                  <p className="text-sm text-slate-600 mb-4">
+                    A hire is considered "Influenced" if any of the following actions were taken in SeekOut prior to the offer date:
+                  </p>
+                  <div className="flex gap-2 flex-wrap">
+                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Profile Viewed</span>
+                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Added to Project</span>
+                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Exported</span>
+                    <span className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium border border-slate-200">Contact Info Revealed</span>
                     </div>
                   </div>
                 </div>
